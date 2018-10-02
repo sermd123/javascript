@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var number = Math.round(Math.random() *100);
+  alert('Ready for the game?');
+  var n=1;
+  while (n <=10) {
+  var guess = prompt("Your Guess:?");
+  if (guess== number){
+    alert("YEEEEEEEE");
+    break;
+  }
+  if (guess>number){
+    alert("WRONG ! Number is Smaller");
+  }
+
+  if (guess<number){
+    alert("WRONG ! Number is bigger");
+
+  }
+    n++;
+}
+  </script>
+</body>
+</html>
