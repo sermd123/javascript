@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Places</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+  var destination = [];    // куда мы напрявляемся это масив
+// домашка .... сделать так что бы максимум 5 значении..
+  while (true) {
+    var d = prompt("Were to?");
+    if (d!= null && d.trim() != "" ) {  // если Д не равно NULL то выполнить destination  или д.трим не равно пробелу.
+    destination.push (d);// это метод добавляет в массив что пришло из промпта
+  } else{
+    break;
+  }
+}
+
+
+
+  console.log (destination);
+</script>
+
+
+
+</body>
+</html>
