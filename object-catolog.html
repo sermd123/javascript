@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+ // eto nasha baza dannih
+     function showProducts(){
+       document.write("<h3>"+ this.title + "</h3>" );
+       document.write("<img src=" + this.photo + " /> <br> " );
+       document.write("<small>"+ this.title + "</small>" );
+     }
+
+
+
+
+
+
+   var products = [
+     {
+       title: "Mettalic Dictionary",
+       photo: "http://picsum.photos/400/300/?image=500",
+       price: 1000,
+       show: showProducts
+     },
+
+      // eto 0 index
+   {
+     title: " SELL MOST  ",
+     photo: "http://picsum.photos/400/300/?image=503",
+     price: 2000,
+     show: showProducts,
+
+   },
+   {
+   title: "Portocal ",
+   photo: "http://picsum.photos/400/300/?image=517",
+   price: 3000,
+   show: showProducts
+  },
+
+   ];
+   products[0].show();
+   products[1].show();
+   products[2].show();  // to4ka eto vhod v object
+
+
+  for (var i = 0; i < products.legth; i++) {
+    products[i].show();
+};
+
+// это шаблон для класса Car  это мы обьявили класс
+  class Car{
+    constructor(){ // etot metod obrasheatsea k Car
+      this.model = "BMW";
+      this.year  = 2017;
+      this.price = 10000;
+    }
+
+    show(){
+      alert("ok");
+
+    }
+
+ }//это мы создали обьект
+ var c1 = new Car();
+ var c2 = new Car();
+ var c3 = new Car();
+
+ console.log( c1 , c2, c3);
+ c3.show();
+
+
+
+
+
+</script>
+</body>
+</html>
