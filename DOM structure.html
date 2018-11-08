@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom navigation</title>
+</head>
+<body>
+  <!-- This is dom ;)  -->
+  <h1>Hello <small>Dom</small> <b>3</b> </h1>
+  <hr>
+  <h2> When working with elements remember ! </h2>
+  <ul>
+    <li>.parentElement</li>
+    <li>.nextElementSibling</li>
+    <li>.previosElementSibling</li>
+    <li>.firstElementChild</li>
+    <li>.lastElementChild</li>
+    <li>.Children</li>
+  </ul>
+   <script type="text/javascript">
+    // 1)
+
+    // var b = document.body.firstElementChild.lastElementChild;
+    // console.log(b);
+    // b.innerHTML = "4";
+
+    // 2 <b></b>
+
+    var c = document.children[0].lastElementChild.children[0].children[1];
+    console.log(c);
+    c.innerHTML = "4";
+
+    var h = document.children[0].lastElementChild.children[3].children[3];
+    console.log;
+    h.innerHTML +=  " <small>Yeee!!!</small>";
+
+   </script>
+
+</body>
+</html>
