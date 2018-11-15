@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<button onclick="increase()" type="button" name="button">+</button>
+
+
+<script type="text/javascript">
+var size = 50;
+function start(){
+  alert();
+  // 1) find button
+  var button = document.getElementsByTagName('button')[0];
+  console.log(button.__proto__);
+  // add styles
+
+  button.style.height = size + "px";
+  button.style.width =  size + "px";
+
+}
+start();
+
+function increase(){
+  alert();
+   //1 size increase by 10
+   size += 10;
+   var button = document.getElementsByTagName('button')[0];
+   console.log(button.__proto__);
+   // add styles
+
+   button.style.height = size + "px";
+   button.style.width =  size + "px";
+}
+</script>
+</body>
+</html>
